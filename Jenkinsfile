@@ -60,7 +60,7 @@ pipeline {
 
     stage('Dependency security scan (Snyk)') {
       steps {
-        withCredentials([string(credentialsId: 'snyk-token', variable: 'SNYK_TOKEN')]) {
+        withCredentials([string(credentialsId: 'synk-token', variable: 'SNYK_TOKEN')]) {
           sh '''
             docker run --rm \
               --network bridge \
