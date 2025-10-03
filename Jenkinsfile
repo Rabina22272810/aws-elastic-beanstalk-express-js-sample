@@ -3,7 +3,6 @@ pipeline {
   agent {
     docker {
       image 'node:16-alpine'
-      args '-u root:root --network project2-compose_jenkins -v /certs/client:/certs/client:ro'
     }
   }
 
